@@ -2,10 +2,8 @@ html {
     box-sizing: border-box;
 }
 body {
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
     background: #FFFFFF;
-    font-family: Roboto;
     color: var(--almost-black-color);
 }
 
@@ -74,10 +72,7 @@ img {
 .header-div {
     display: flex;
     align-items: center;
-}
-
-.header-div a {
-    display: block;
+    height: 80px;
 }
 
 .main-page-link {
@@ -140,6 +135,7 @@ img {
 .main-mail-header,
 .main-phone-header {
     display: flex;
+    align-items: center;
 
     font-weight: 500;
     font-size: 14px;
@@ -165,9 +161,11 @@ img {
 
 .main-page-face {
     background: #2F303A;
-    background-image: url('../images/hero-background.jpg');
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-background.jpg');
     background-repeat: no-repeat;
-    background-position: center ;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -418,12 +416,6 @@ img {
 .portfolio-categories-button:hover {
     background: var(--blue-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
     color: var(--white-color);
 }
 
@@ -447,7 +439,8 @@ img {
 .portfolio-variants-link {
     display: block;
 }
-.portfolio-variants-link:hover {
+.portfolio-variants-link:hover,
+.portfolio-variants-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
